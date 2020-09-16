@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+.main-header {
+  display: inline-block;
+  background: #2ddf5c;
+  padding: 0 0.8rem;
+  margin: 0;
+  width: 100%;
+}
+
+.main-header div {
+  display: inline-block;
+}
+
+.main-header__brand {
+  margin: 0;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-left: 0.4rem;
+  color: #0e4f1f;
+}
+.main-header__brand:hover, .main-header__brand:active {
+  color: white;
+  border-bottom: 0.25rem solid white;
+}
+
+.main-nav {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  width: calc(100% - 4.6rem);
+}
+
+.main-nav__items {
+  list-style: none;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.main-nav__item {
+  display: inline-block;
+  margin-left: 0.8rem;
+  font-weight: bold;
+}
+
+.main-nav__item a {
+  text-decoration: none;
+  color: #0e4f1f;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.25rem 0;
+}
+.main-nav__item a:hover, .main-nav__item a:active {
+  color: white;
+  border-bottom: 0.25rem solid white;
+}
+
+.main-nav__item--cta a {
+  color: white;
+  background: #ff1b68;
+  padding: 0.25rem 1rem;
+  border-radius: 0.5rem;
+}
+.main-nav__item--cta a:hover, .main-nav__item--cta a:active {
+  color: #ff1b68;
+  background: white;
+}
+
+.main-footer {
+  background: black;
+  height: 4rem;
+  margin-top: 2.5rem;
+}
+
+.main-footer__links {
+  list-style: none;
+  text-align: center;
+  margin: auto;
+}
+
+.main-footer__link {
+  display: inline-block;
+  padding: 1.2rem 0;
+  margin: auto;
+  vertical-align: center;
+  text-align: center;
+  width: 15%;
+}
+
+.main-footer__link a {
+  text-decoration: none;
+  color: white;
+}
+
+.main-footer__link a:hover,
+.main-footer__link a:active {
+  color: #7f7f7f;
+}
+
+/*# sourceMappingURL=shared.css.map */

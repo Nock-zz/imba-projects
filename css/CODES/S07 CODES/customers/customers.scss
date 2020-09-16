@@ -1,0 +1,62 @@
+@import "../_variables.scss";
+
+
+html {
+  width: 100%;
+}
+
+body {
+  width: 100%;
+}
+
+main {
+  width: 100%;
+}
+
+#customer-1 {
+  text-align: left;
+}
+
+#customer-2 {
+  text-align: right;
+}
+
+.testimonial {
+  //text-align: left;
+  margin-top: 5rem;
+  width: 100%;
+  vertical-align: middle;
+  font-size: 1.2rem;
+}
+
+.testimonial__image-container {
+  display: inline-block;
+  width: 65%;
+  padding: 1rem 0;
+  vertical-align: inherit;
+}
+
+.testimonial__image-container img {
+  width: 100%;
+}
+
+.testimonial__info {
+  display: inline-block;
+  width: 30%;
+  vertical-align: inherit;
+  padding: 1rem;
+  text-align: left;
+  h2, a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: map-get($colors, grey);
+  }
+  a:hover, a:active {
+    color: darken(map-get($colors, grey), 15%);
+  }
+
+}
+
+.testimonial__name {
+  color: map-get($colors, red);
+}

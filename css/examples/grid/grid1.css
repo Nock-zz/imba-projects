@@ -1,0 +1,23 @@
+
+
+.grid1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 10fr 10fr;
+  grid-auto-rows: 10fr;
+  grid-gap: 10px;
+
+}
+
+.grid1 > div {
+  background-color: #22bfd5;
+  font-weight: bold;
+}
+
+.grid1 > div:nth-child(2n) {
+  background-color: #fff;
+}
+
+p::after {
+  content: " css update";
+}

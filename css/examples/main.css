@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+  margin-top: 3rem;
+  position: relative;
+}
+
+.block-container {
+  position: relative;
+  width: 95%;
+  margin: 3rem auto;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+.block-1 {
+  background: red;
+  display: inline-block;
+  width: 30%;
+  height: calc(30vh/3);
+  text-align: left;
+  vertical-align: inherit;
+}
+
+.block-2 {
+  background: blue;
+  display: inline-block;
+  width: 30%;
+  margin: 0;
+  height: calc(30vh/4);
+  vertical-align: inherit;
+}
+
+.block-3 {
+  background: salmon;
+  display: inline-block;
+  width: 30%;
+  height: calc(30vh/3);
+  text-align: right;
+  vertical-align: inherit;
+}
+
+.position-container {
+  margin: 3rem auto;
+  width: 95%;
+  height: 10vh;
+  position: relative;
+}
+
+.position-1 {
+  background: red;
+  width: 30%;
+  position: absolute;
+  left: 5%;
+  height: calc(30vh/3);
+  text-align: left;
+  vertical-align: inherit;
+}
+
+.position-2 {
+  background: blue;
+  width: 30%;
+  position: absolute;
+  left: 35%;
+  top: calc(30vh/3 - 30vh/4);
+  height: calc(30vh/4);
+  vertical-align: inherit;
+}
+
+.position-3 {
+  background: salmon;
+  width: 30%;
+  position: absolute;
+  left: 65%;
+  height: calc(30vh/3);
+  text-align: right;
+  vertical-align: inherit;
+}
+
+.float-container {
+  width: 95%;
+  height: 10vh;
+  margin: 3rem auto;
+}
+
+.float-1 {
+  background: red;
+  float: left;
+  width: 30%;
+  margin-left: 5%;
+  height: calc(30vh/3);
+  text-align: left;
+  vertical-align: inherit;
+}
+
+.float-2 {
+  background: blue;
+  float: left;
+  width: 30%;
+  height: calc(30vh/4);
+  vertical-align: inherit;
+}
+
+.float-3 {
+  background: salmon;
+  float: left;
+  width: 30%;
+  margin-right: 5%;
+  height: calc(30vh/3);
+  text-align: right;
+  vertical-align: inherit;
+}
+
+.clearfix {
+  clear: both;
+}
+
+/*# sourceMappingURL=main.css.map */

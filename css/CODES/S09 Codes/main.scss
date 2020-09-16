@@ -1,0 +1,140 @@
+$colors: (red: #ff1b68, green: #2ddf5c, dark-green: #0e4f1f, grey:#7f7f7f);
+$nav-border-bottom: 0.25rem solid white;
+
+@import "_variables.scss";
+
+#product-overview {
+    background: map-get($colors, red);
+    background-image: url("./images/freedom.jpg");
+    background-position: left bottom 20%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    position: relative;
+    width:100%;
+    height: 36rem;
+    margin: 0;
+    h1 {
+      position: absolute;
+      left: 5%;
+      bottom: 3%;
+    }
+}
+
+.section-title {
+    color: map-get($colors, green);
+    text-align: center;
+}
+
+.plan__list {
+  width:80%;
+  text-align: center;
+  margin: auto;
+
+
+}
+
+.plan {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  padding: 1rem;
+  margin: 0.5rem;
+  width: 30%;
+  background: lighten(map-get($colors, green), 35%);
+}
+
+.plan--highlighted {
+  background: darken(map-get($colors, green), 15%);
+  color: white;
+}
+
+.plan__annotation {
+  background: white;
+  color: map-get($colors, green);
+  // border: 2px solid map-get($colors, dark-green);
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  padding: 0.5rem;
+}
+
+.plan__price {
+  color: map-get($colors, grey);
+}
+
+.plan--highlighted .plan__price {
+  color: darken(map-get($colors, grey), 20%);
+}
+
+.plan__features {
+  list-style: none;
+  padding: 0;
+}
+
+.plan__feature {
+  list-style: none;
+  padding: 0.3rem;
+  text-align: center;
+}
+
+.plan__button {
+  border: 3px solid map-get($colors, dark-green);
+  border-radius: 8px;
+  background: map-get($colors, dark-green);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+.plan__button:hover, .plan_button:active {
+  background: white;
+  color: map-get($colors, dark-green);
+  font-weight: bold;
+}
+
+#product-overview h1 {
+  color: white;
+  font-family: 'Anton', sans-serif;
+  margin: 0;
+  padding: 1.2rem;
+}
+
+#key-features {
+  background: map-get($colors,red);
+  margin-top: 5.8rem;
+  padding: 0.5rem;
+  .section-title {
+    color: white;
+    margin: 1rem;
+  }
+}
+
+.key-feature__list {
+  text-align: center;
+
+}
+
+.key-feature {
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  margin: auto;
+}
+
+.key-feature__image {
+  border: 2px solid map-get($colors,dark-green);
+  border-radius: 50%;
+  background: lighten(map-get($colors,red), 35%);
+  width: 15vw;
+  height: 15vw;
+  margin: 2rem 7vw;
+  padding: 1.5rem;
+}
+
+.key-feature__description {
+  text-align: center;
+  color: white;
+  font-size: inherit;
+  font-weight: bold;
+}

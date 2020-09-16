@@ -1,0 +1,170 @@
+#product-overview {
+  background: #ff1b68;
+  background-image: url("./images/freedom.jpg");
+  background-position: left 20% bottom 70%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  position: relative;
+  width: 100%;
+  height: 36vh;
+  margin: 5rem;
+}
+@media (min-width: 40rem) {
+  #product-overview {
+    height: 40vh;
+    background-position: left 25% bottom 75%;
+  }
+}
+#product-overview h1 {
+  position: absolute;
+  left: 5%;
+  bottom: 3%;
+  font-size: 1.4rem;
+}
+@media (min-width: 40rem) {
+  #product-overview h1 {
+    font-size: 3rem;
+  }
+}
+
+.section-title {
+  color: #2ddf5c;
+  text-align: center;
+}
+
+.plan__list {
+  width: 100%;
+  text-align: center;
+}
+@media (min-width: 40rem) {
+  .plan__list {
+    width: 95%;
+    margin: auto;
+  }
+}
+
+.plan {
+  vertical-align: middle;
+  text-align: center;
+  padding: 0.5rem;
+  width: 100%;
+  background: #c8f7d4;
+}
+@media (min-width: 40rem) {
+  .plan {
+    display: inline-block;
+    width: 30%;
+    min-width: 12rem;
+    max-width: 25rem;
+  }
+}
+
+.plan--highlighted {
+  background: #19a63f;
+  color: white;
+}
+
+.plan__annotation {
+  background: white;
+  color: #2ddf5c;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  padding: 0.5rem;
+}
+
+.plan__price {
+  color: #7f7f7f;
+}
+
+.plan--highlighted .plan__price {
+  color: #4c4c4c;
+}
+
+.plan__features {
+  list-style: none;
+  padding: 0;
+}
+
+.plan__feature {
+  list-style: none;
+  padding: 0.3rem;
+  text-align: center;
+}
+
+.plan__button {
+  border: 3px solid #0e4f1f;
+  border-radius: 8px;
+  background: #0e4f1f;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+.plan__button:hover, .plan_button:active {
+  background: white;
+  color: #0e4f1f;
+  font-weight: bold;
+}
+
+#product-overview h1 {
+  color: white;
+  font-family: "Anton", sans-serif;
+  margin: 0;
+  padding: 1.2rem;
+}
+
+#key-features {
+  background: #ff1b68;
+  margin-top: 5.8rem;
+  padding: 0.5rem;
+}
+#key-features .section-title {
+  color: white;
+  margin: 1rem;
+}
+
+.key-feature__list {
+  text-align: center;
+  margin: 1rem 0;
+  padding-inline-start: 0;
+}
+@media (min-width: 40rem) {
+  .key-feature__list {
+    margin: auto;
+  }
+}
+
+.key-feature {
+  vertical-align: top;
+  margin: auto;
+  min-width: 12rem;
+  max-width: 25rem;
+}
+@media (min-width: 40rem) {
+  .key-feature {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+  }
+}
+
+.key-feature__image {
+  border: 2px solid #0e4f1f;
+  border-radius: 50%;
+  background: #ffcede;
+  width: 120px;
+  height: 120px;
+  padding: 1.5rem;
+  margin: auto;
+}
+
+.key-feature__description {
+  text-align: center;
+  color: white;
+  font-size: inherit;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=main.css.map */

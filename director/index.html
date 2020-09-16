@@ -1,0 +1,41 @@
+CTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>A Gentle Introduction</title>
+
+    <script
+      src="https://rawgit.com/flatiron/director/master/build/director.min.js">
+    </script>
+
+    <script>
+      var author = function () { console.log("author"); };
+      var books = function () { console.log("books"); };
+      var viewBook = function (bookId, someId) {
+        console.log("viewBook: bookId is populated: " + bookId + " and so is someId: " + someId);
+      };
+
+      var routes = {
+        '/author': author,
+        '/books': [books, function() {
+          console.log("An inline route handler.");
+        }, function() { console.log("and anything else");} ],
+        '/books/view/:bookId/:someId': viewBook
+      };
+
+      var router = Router(routes);
+
+      router.init();
+    </script>
+  </head>
+
+  <body>
+    <ul>
+      <li><a href="#/author">#/author</a></li>
+      <li><a href="#/books">#/books</a></li>
+      <li><a href="#/books/view/12/13">#/books/view/12/13</a></li>
+    </ul>
+  </body>
+</html>
+
+

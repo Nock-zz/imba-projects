@@ -1,0 +1,127 @@
+* {
+box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+  margin-top: 3rem;
+  position: relative;
+}
+
+.block-container {
+  position: relative;
+  width: 95%;
+  margin: 3rem auto;         // if width is not 100% sets equal margins
+  text-align: center;        //centers the elements in the container block but leaves a gap between elements
+  vertical-align: bottom;    //must use inherit to take effect on child blocks
+}
+
+.block-1 {
+  background: red;
+  display: inline-block;         //comment out display and width to get mobile look
+  width: 30%;                    //comment out display and width to get mobile look
+  height: calc(30vh/3);
+  text-align: left;
+  vertical-align: inherit;
+}
+
+.block-2 {
+  background: blue;
+  display: inline-block;         //comment out display and width to get mobile look
+  width: 30%;                    //comment out display and width to get mobile look
+  margin: 0;
+  height: calc(30vh/4);
+  vertical-align: inherit;
+}
+
+.block-3 {
+  background: salmon;
+  display: inline-block;         //comment out display and width to get mobile look
+  width: 30%;                    //comment out display and width to get mobile look
+  height: calc(30vh/3);
+  text-align: right;
+  vertical-align: inherit;
+}
+
+.position-container {
+  margin: 3rem auto;            //adjusts margins but need to set left on children for centering
+  width: 95%;                   // position container must set a width and a height
+  height: 10vh;                 // position container must set a width and a height; Increase height for mobile
+  position: relative;
+  // text-align: center;           //FAILS TO centers the elements in the container block
+  // vertical-align: bottom;       // FAILS TO must use inherit to take effect on child blocks USE POSITION Top
+}
+
+.position-1 {
+  background: red;
+  width: 30%;                    //comment out width, position left to get mobile look
+  position: absolute;
+  left: 5%;
+  height: calc(30vh/3);
+  text-align: left;
+  vertical-align: inherit;
+}
+
+.position-2 {
+  background: blue;
+  width: 30%;                    //comment out width, position left to get mobile look
+  position: absolute;
+  left: 35%;
+  top: calc(30vh/3 - 30vh/4);
+  height: calc(30vh/4);
+  vertical-align: inherit;
+}
+
+.position-3 {
+  background: salmon;
+  width: 30%;                    //comment out width, position left to get mobile look
+  position: absolute;
+  left: 65%;
+  height: calc(30vh/3);
+  text-align: right;
+  vertical-align: inherit;
+}
+
+
+.float-container {
+  width: 95%;                   // float container must set a width and a height
+  height: 10vh;                 // float container must set a width and a height; Increase height for mobile look
+  margin: 3rem auto;               // Sets equal margins only if margin-left and margin-right is used on children
+  // text-align: center;              //FAILS TO centers the element in the container block
+  // vertical-align: middle;          //FAILS TO must use inherit to take effect on child blocks
+  // justify-content: center;
+  // align-items: center;
+
+}
+
+.float-1 {
+  background: red;
+  float: left;                      //comment out float and width and margin to get mobile look
+  width: 30%;                       //comment out float and width and margin to get mobile look
+  margin-left: 5%;                  //comment out float and width and margin to get mobile look
+  height: calc(30vh/3);
+  text-align: left;
+  vertical-align: inherit;
+}
+
+.float-2 {
+  background: blue;
+  float: left;                      //comment out float and width and margin to get mobile look
+  width: 30%;                       //comment out float and width and margin to get mobile look
+  height: calc(30vh/4);
+  vertical-align: inherit;
+}
+
+.float-3 {
+  background: salmon;
+  float: left;                      //comment out float and width and margin to get mobile look
+  width: 30%;                       //comment out float and width and margin to get mobile look
+  margin-right: 5%;                 //comment out float and width and margin to get mobile look
+  height: calc(30vh/3);
+  text-align: right;
+  vertical-align: inherit;
+}
+
+.clearfix {
+  clear: both;
+}

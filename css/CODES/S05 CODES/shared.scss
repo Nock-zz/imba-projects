@@ -1,0 +1,116 @@
+$colors: (red: #ff1b68, green: #2ddf5c, dark-green: #0e4f1f, grey:#7f7f7f);
+$nav-border-bottom: 0.25rem solid white;
+
+@import  "_variables.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin:0;
+}
+
+.main-header {
+  display: inline-block;
+  background: map-get($colors, green);
+  padding: 0 0.8rem;
+  margin:0;
+  width: 100%;
+}
+
+.main-header div {
+  display: inline-block;
+}
+
+.main-header__brand {
+  margin: 0;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-left: 0.4rem;
+  color: map-get($colors, dark-green);
+  // padding: 0.25rem 0;
+  &:hover, &:active {
+    color: white;
+    border-bottom: $nav-border-bottom;
+  }
+}
+
+.main-nav {
+  margin: 0;
+  padding:0;
+  display:inline-block;
+  width: calc(100% - 4.6rem);
+}
+
+.main-nav__items {
+  list-style: none;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.main-nav__item {
+  display: inline-block;
+  margin-left: 0.8rem;
+  font-weight: bold;
+}
+
+.main-nav__item a {
+  text-decoration: none;
+  color: map-get($colors, dark-green);
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.25rem 0;
+  &:hover, &:active {
+    color: white;
+    border-bottom: $nav-border-bottom;
+  }
+}
+
+.main-nav__item--cta a {
+  color: white;
+  background: map-get($colors, red);
+  padding: 0.25rem 1rem;
+  border-radius: 0.5rem;
+  &:hover, &:active {
+    color: map-get($colors, red);
+    background: white;
+    //border-bottom: 0.25rem solid white;
+  }
+}
+
+.main-footer {
+  background: black;
+  height: 4rem;
+  margin-top: 2.5rem;
+
+
+}
+
+.main-footer__links {
+  list-style: none;
+  text-align: center;
+  margin: auto;
+}
+
+.main-footer__link {
+  display: inline-block;
+  padding: 1.2rem 0;
+  margin: auto;
+  vertical-align: center;
+  text-align: center;
+  width: 15%;
+}
+
+.main-footer__link a {
+  text-decoration: none;
+  color: white;
+}
+
+.main-footer__link a:hover,
+ .main-footer__link a:active {
+  color: map-get($colors, grey);
+}

@@ -1,0 +1,60 @@
+@import "../_variables.scss";
+
+ .package {
+  margin: 2rem 0;
+  padding: 1rem 0;
+  display: block;
+  border: 3px solid map-get($colors, dark-green);
+  border-left: none;
+  width: 80%;
+  background: lighten(map-get($colors, green), 35%);
+  text-align: left;
+  &:hover {
+    border: 2px solid red;
+    box-shadow: 2px 2px 2px 2px map-get($colors, grey);
+    border-left: none;
+  }
+  .package__plan {
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    color: map-get($colors, dark-green);
+  }
+  .package__anotation {
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    color: map-get($colors, grey);
+    }
+  .package__description {
+    padding: 1rem 1rem;
+    margin: 1rem;
+    color: map-get($colors, dark-green);
+    border: 3px solid map-get($colors, dark-green);
+    background: white;
+  }
+  &.free {
+    float: right;
+    border-left: 3px solid map-get($colors, dark-green);
+    border-right: none;
+    text-align: right;
+    background: lighten(map-get($colors, green), 35%);
+    &:hover {
+      border: 2px solid red;
+      box-shadow: 2px 2px 2px 2px map-get($colors, grey);
+      border-right: none;
+    }
+  }
+  &.premium {
+    background: darken(map-get($colors, green), 35%);
+    .package__plan {
+      color: white;
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.clearfix {
+  clear: both;
+}

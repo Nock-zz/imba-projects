@@ -1,0 +1,79 @@
+html {
+  width: 100%;
+}
+
+body {
+  width: 100%;
+}
+
+main {
+  width: 100%;
+}
+
+#customer-1 {
+  text-align: left;
+}
+
+@media (min-width: 40rem) {
+  #customer-1 {
+    text-align: right;
+  }
+}
+#customer-2 {
+  text-align: left;
+  margin-top: 0;
+}
+
+@media (min-width: 40rem) {
+  #customer-2.testimonial {
+    margin-top: 5rem;
+  }
+}
+.testimonial {
+  margin: 5rem auto;
+  width: 100%;
+  vertical-align: middle;
+  font-size: 1.2rem;
+  max-width: 1500px;
+}
+
+.testimonial__image-container {
+  display: inline-block;
+  width: 65%;
+  padding: 1rem 0;
+  vertical-align: inherit;
+}
+
+.testimonial__image-container img {
+  width: 100%;
+}
+
+.testimonial__info {
+  vertical-align: inherit;
+  padding: 1rem;
+  text-align: inherit;
+}
+
+@media (min-width: 40rem) {
+  .testimonial__info {
+    display: inline-block;
+    width: 30%;
+  }
+}
+.testimonial__info h2, .testimonial__info a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #7f7f7f;
+}
+
+.testimonial__info a:hover, .testimonial__info a:active {
+  color: #595959;
+}
+
+.testimonial__name {
+  color: #ff1b68;
+}
+
+/*# sourceMappingURL=customers.css.map */
+
+/*# sourceMappingURL=customers.css.map */
